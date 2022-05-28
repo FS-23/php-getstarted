@@ -1,7 +1,23 @@
 
 <?php require_once './layouts/header.php' ?>
 <?php
-   require_once ('datas/horraire.php')
+    $horraire = [
+        "08:00 - 12:00",
+        "12:30 - 18:00", 
+        "19:30 - 22:00"
+    ];
+    $user = "admin";
+
+
+    
+    // print_r($_SERVER);
+    // print_r($_REQUEST);
+                            
+    $starttime = $_REQUEST['starttime'];
+    $endtime = $_REQUEST['endtime'];
+
+    if(!empty($starttime) && !empty($endtime))
+          $horraire[] = "$starttime - $endtime";
 ?>
 <div class="row mx-0">
     <div class="col-8">

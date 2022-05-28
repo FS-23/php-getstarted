@@ -1,7 +1,7 @@
 
 <?php require_once './layouts/header.php' ?>
 <?php
-   require_once ('datas/horraire.php')
+   require_once ('data/horraire.php')
 ?>
 <div class="row mx-0">
     <div class="col-8">

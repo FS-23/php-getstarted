@@ -1,7 +1,39 @@
 
 <?php require_once './layouts/header.php' ?>
 <?php
-   require_once ('datas/horraire.php')
+
+    /*
+
+            [
+                "08:00 - 12:00",
+                "12:30 - 18:00", 
+                "19:30 - 22:00"
+            ];
+
+    */
+    $horraire = $_COOKIE['horraire'];
+
+    if(empty($horraire)){
+        setcookie('horraire', serialize([]), time()+ 10000000);
+    }
+    $user = "admin";
+
+    // print_r($_SERVER);
+    // print_r($_REQUEST);
+                            
+    $starttime = $_REQUEST['starttime'];
+    $endtime = $_REQUEST['endtime'];
+
+    $horraire = unserialize($_COOKIE['horraire']);
+    if(!empty($starttime) && !empty($endtime)){
+        $horraire[] = "$starttime - $endtime";
+        setcookie('horraire', serialize( $horraire), time()+ 10000000);
+    }
+          
+
+    
+
+  
 ?>
 <div class="row mx-0">
     <div class="col-8">
