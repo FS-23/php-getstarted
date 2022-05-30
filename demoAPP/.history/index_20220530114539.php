@@ -1,18 +1,20 @@
 
 <?php require_once './layouts/header.php' ?>
 <?php
-   // require_once ('datas/horraire-with-cookies.php');
+   require_once ('datas/horraire-with-cookies.php');
    require_once ('datas/horraire-with-file.php');
 ?>
 <div class="row mx-0">
     <div class="col-8">
-           <div class="shadow-sm bg-light p-3 mt-5">
-               <h5>Liste des menus</h5>
-           </div>
+                 <?php if($user == "admin") : ?>
+                    <div class="alert alert-success w-25"> Vous avez toutes les autorisations</div>
+                   <?php else: ?>
+                    <div class="alert alert-danger w-25"> Vous n'avez pas les autorisations</div>
+                 <?php endif ?>       
     </div>
 
     <div class="col-4 ">
-        <div class="shadow-sm bg-dark text-white p-3 mt-5">
+        <div class="shadow-sm bg-light p-3 mt-5">
             <h5> horraires d'ouverture</h5>
             <div class="mt-2">
                    <?php foreach($horraires as $item):  ?>

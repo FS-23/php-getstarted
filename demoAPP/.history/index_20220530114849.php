@@ -12,7 +12,7 @@
     </div>
 
     <div class="col-4 ">
-        <div class="shadow-sm bg-dark text-white p-3 mt-5">
+        <div class="shadow-sm bg-light p-3 mt-5">
             <h5> horraires d'ouverture</h5>
             <div class="mt-2">
                    <?php foreach($horraires as $item):  ?>

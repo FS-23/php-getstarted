@@ -22,7 +22,7 @@
   // echo $fileContent;
 
 
-   file_put_contents('./datas/files/score.txt' , " Votre score est: 8" , FILE_APPEND);
+   file_put_contents('./datas/files/score.txt' , "Votre score est: 7" , FILE_APPEND);
 
 
 
