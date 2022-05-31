@@ -20,9 +20,9 @@
 
          $statement = $con->prepare($sql);
 
-         $statement->bindParam('label', $title);
-         $statement->bindParam('ingredient', $ingredient);
-         $statement->bindParam('price', $price);
+         $statement.bindParam('label', $title);
+         $statement.bindParam('ingredient', $ingredient);
+         $statement.bindParam('price', $price);
 
          $statement -> execute();
          
@@ -38,5 +38,3 @@
        echo "Erreur de requete:".$ex->getMessage();
 
    }
-
-   header("Location:/");

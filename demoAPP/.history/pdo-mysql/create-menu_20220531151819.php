@@ -39,4 +39,4 @@
 
    }
 
-   header("Location:/");
+   header("Location:/")

@@ -45,7 +45,6 @@
            </div>
            <div class="shadow-sm bg-light p-3 mt-5">
                <div class="p-3 bordered">
-                   <h5 class = "mb-3"> Nouveau menu </h5>
                    <form action="/pdo-mysql/create-menu.php" method="post">
                        <div class="form-group">
                            <label for="" class="form-label">Title</label>
@@ -80,7 +79,7 @@
                            <div class="row mx-0">
                              <input type="time" class="form-control col-4 mt-2" name="starttime">
                              <input type="time" class="form-control col-4 mt-2" name="endtime">
-                             <button class="btn btn-primary mt-3">Enregistrer</button>
+                             <button class="btn btn-primary">Enregistrer</button>
                            </div>
                             
                             

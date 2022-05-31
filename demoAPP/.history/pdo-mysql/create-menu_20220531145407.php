@@ -38,5 +38,3 @@
        echo "Erreur de requete:".$ex->getMessage();
 
    }
-
-   header("Location:/");

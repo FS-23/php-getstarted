@@ -20,23 +20,21 @@
 
          $statement = $con->prepare($sql);
 
-         $statement->bindParam('label', $title);
-         $statement->bindParam('ingredient', $ingredient);
-         $statement->bindParam('price', $price);
+         $statement.bindParam('label', $title);
+         $statement.bindParam('ingredient', $ingredient);
+         $statement.bindParam('price', $price);
 
          $statement -> execute();
          
          echo "Created successfully!!!\n";
 
-       //  echo "Title: $title - price: $price - ingredient: $ingredient";
+         echo "Title: $title - price: $price - ingredient: $ingredient";
 
       }
       
 
    }catch(Exception $ex){
 
-       echo "Erreur de requete:".$ex->getMessage();
+       echo "Erreur de connexion:".$ex->getMessage();
 
    }
-
-   header("Location:/");

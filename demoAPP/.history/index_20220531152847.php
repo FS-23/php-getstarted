@@ -45,7 +45,7 @@
            </div>
            <div class="shadow-sm bg-light p-3 mt-5">
                <div class="p-3 bordered">
-                   <h5 class = "mb-3"> Nouveau menu </h5>
+                   <h5> Nouveau menu </h5>
                    <form action="/pdo-mysql/create-menu.php" method="post">
                        <div class="form-group">
                            <label for="" class="form-label">Title</label>

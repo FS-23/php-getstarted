@@ -16,36 +16,18 @@
                    <div class="row mx-0">
                        <?php foreach($menus as $menu): ?>
                          <div class="col-12 col-sm-2 col-lg-4 mt-2">
-                              <div class="p-2 bg-white h-100">
+                              <div class="p-2 bg-white">
                                     <h5><?= $menu['label'] ?></h5>
                                     <p><?= $menu['ingredient'] ?></p>
-                                    <strong class="text-info" style="font-size: 12"><?= $menu['price'] ?> MAD</strong>
+                                    <strong class="text-info"><?= $menu['price'] ?> MAD</strong>
                               </div>
                          </div>
                        <?php endforeach; ?>
                    </div>
                </div>
-
-               <table class="table table-bordered d-none">
-                   <thead>
-                       <th>Nom du menu</th>
-                       <th>Ingredients</th>
-                       <th>Prix</th>
-                   </thead>
-                   <tbody>
-                      <?php foreach($menus as $menu): ?>
-                         <tr>
-                            <td><?= $menu['label'] ?></td>
-                            <td><?= $menu['ingredient'] ?></td>
-                            <td><?= $menu['price'] ?> MAD</td>
-                         </tr>
-                      <?php endforeach; ?>
-                   </tbody>
-               </table>
            </div>
            <div class="shadow-sm bg-light p-3 mt-5">
                <div class="p-3 bordered">
-                   <h5 class = "mb-3"> Nouveau menu </h5>
                    <form action="/pdo-mysql/create-menu.php" method="post">
                        <div class="form-group">
                            <label for="" class="form-label">Title</label>
@@ -77,14 +59,9 @@
                    <?php endforeach; ?>
                    <div>
                        <form action=""  method="post">
-                           <div class="row mx-0">
-                             <input type="time" class="form-control col-4 mt-2" name="starttime">
-                             <input type="time" class="form-control col-4 mt-2" name="endtime">
-                             <button class="btn btn-primary mt-3">Enregistrer</button>
-                           </div>
-                            
-                            
-                            
+                            <input type="time" name="starttime">
+                            <input type="time" name="endtime">
+                            <button>Enregistrer</button>
                        </form>
 
 
