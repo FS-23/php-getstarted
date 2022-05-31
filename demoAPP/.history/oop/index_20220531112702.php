@@ -59,4 +59,4 @@
 
   echo "Person name:".$person1->name."\n";
 
- 
+  echo rand(5,10);

@@ -57,6 +57,7 @@
   var_dump($person1);
 
 
-  echo "Person name:".$person1->name."\n";
+  echo "Person name:".$person1->name;
 
- 
+
+  
