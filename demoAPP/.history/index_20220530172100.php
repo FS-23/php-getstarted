@@ -8,24 +8,13 @@
     <div class="col-8">
            <div class="shadow-sm bg-light p-3 mt-5">
                <h5>Liste des menus</h5>
-           </div>
-           <div class="shadow-sm bg-light p-3 mt-5">
+
+
                <div class="p-3 bordered">
-                   <form action="create.php" method="post">
+                   <form action="">
                        <div class="form-group">
-                           <label for="" class="form-label">Title</label>
-                           <input type="text" name="title" class="form-control">
-                       </div>
-                       <div class="form-group">
-                           <label for="" class="form-label">Ingredient</label>
-                           <textarea name="ingredient"  class="form-control"></textarea>
-                       </div>
-                       <div class="form-group">
-                           <label for="" class="form-label">Price</label>
-                           <input type="number" name="price" class="form-control">
-                       </div>
-                       <div class="mt-3">
-                           <button class="btn btn-primary">Enregistrer</button>
+                           <label for="" class="form-label"></label>
+                           <input type="text" class="form-control">
                        </div>
                    </form>
                </div>

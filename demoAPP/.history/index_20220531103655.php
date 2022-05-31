@@ -18,11 +18,11 @@
                        </div>
                        <div class="form-group">
                            <label for="" class="form-label">Ingredient</label>
-                           <textarea name="ingredient"  class="form-control"></textarea>
+                           <textarea name=""  class="form-control"></textarea>
                        </div>
                        <div class="form-group">
-                           <label for="" class="form-label">Price</label>
-                           <input type="number" name="price" class="form-control">
+                           <label for="" class="form-label">Title</label>
+                           <input type="number" class="form-control">
                        </div>
                        <div class="mt-3">
                            <button class="btn btn-primary">Enregistrer</button>

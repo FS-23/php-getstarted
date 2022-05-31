@@ -1,0 +1,1 @@
+a:3:{s:7:"couleur";s:5:"Rouge";s:9:"nouriture";s:11:"Fait maison";s:6:"saison";s:5:"été";}

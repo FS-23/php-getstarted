@@ -1,0 +1,54 @@
+<?php
+  class Person {
+      public $name;
+      private $size;
+
+      function __construct($name , $size){
+          $this -> name = $name;
+          $this -> size = $size;
+          echo "New instance created\n";
+      }
+
+      function setSize($sizeValue){
+          $this -> size = $sizeValue;
+      }
+
+
+      function __destruct(){
+          echo "Instance removed !!!";
+      }
+  }
+
+
+
+  $person1 = new Person("Youssef", 1.84);
+  $person2 = new Person("Akhenaton", 1.6);
+
+//   $person1 -> name = "Youssef";
+//   $person1 -> size = "Youssef";
+//   $person1 -> level = "Youssef";
+//   $person1 -> name = "Youssef";
+//   $person1 -> name = "Youssef";
+//   $person1 -> setSize(1.84);
+//   $person1 -> favorigteFood = "Poulet rotie";
+
+  var_dump($person1);
+  var_dump($person2);
+
+  echo "Person name:".$person1->name;
+
+
+//   class Animal{
+//       $name;
+//       $color;
+
+
+//   }
+
+
+//   $chat = new Animal();
+
+//   $chat -> name = "Loukas";
+//   $chat -> color = "Grey";
+  // $pers1 = person("Moha", "..", "...","....")
+  // 
